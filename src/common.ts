@@ -17,23 +17,36 @@ function calc_one(scenario:Scenario){
     ans+=line.amt
   return ans
 }
-function td(a:string){
-  return `<td>${a}</td>`
+type Atom=string|number|Price
+interface Price{
+  amt:number
+  currency:string
 }
-function tr(...a:string[]){
+function td(a:Atom){
+  if (typeof (a)==='number')
+    return `<td class=number>${a}</td>`
+  if (typeof (a)==='string')
+    return `<td >${a}</td>`  
+  return `<td class=number>${a.currency}${a.amt}</td>`
+}
+
+
+function tr(...a:Atom[]){
+  
   return `<tr>${a.map(td).join('\n')}</tr>`
   //return `<td>${a}</td>`
-}
+}  
 function calc_scenario_html(currency:string,scenario:Scenario,cheapset:Scenario){
+
   let total=0
   const {lines,title}=scenario
-  const cheapset_msg=scenario===cheapset?"-cheapset":''
+const cheapset_msg=scenario===cheapset?"<span class=highlight>-cheapset</spsan>":''
   const rows=[`<tr class=title><td colspan=4>${title} ${cheapset_msg}</td></tr>`]
   for (const {name,amt,comment,url} of lines){
     total+=amt
-    rows.push(tr(name,comment,make_link(url),`${currency}${amt}`))
+    rows.push(tr(name,comment,make_link(url),{amt,currency}))
   }
-  rows.push(tr('total','','',`${currency}${total}`))
+  rows.push(tr('total','','',{amt:total,currency}))
   return rows.join('\n')
 }
 

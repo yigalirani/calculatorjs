@@ -53,5 +53,5 @@ const scenarios = [{
   }]
 }]
 export function calc_trip() {
-  return `${calc('$',scenarios)}version 3`
+  return calc('$',scenarios)
 }

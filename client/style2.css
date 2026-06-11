@@ -126,10 +126,10 @@ font-weight:bold;
         margin:10px;
         margin-top: 0pt;
 }
-.content_body  td{
+.content_body  td{ 
     padding: 6pt;
     margin:5px;
-    background:#E8E8FF;
+    background: #e8e8ff7d;
     border:2px solid white;
     white-space: nowrap;
 }
@@ -145,5 +145,15 @@ a[target="_blank"]::after {
   margin: 0 3px 0 5px;
 }
 .title td{
-  background-color: bisque;
+  padding: 0;
+  font-weight: bold;
+  padding-left:0px;  
+} 
+.highlight{
+  background-color: yellow;
+  font-weight: bold;
+}
+.number{
+  text-align: right;
+  font-variant-numeric: tabular-nums;  
 }
