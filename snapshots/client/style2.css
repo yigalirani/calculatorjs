@@ -1,0 +1,146 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+.part{
+	color:gray;
+}
+h1{
+	color:#2B7A10;
+	padding:3pt;
+	margin-bottom:5pt;
+	text-align:left;
+	font-size:19pt;
+	font-weight:bold;
+	margin-left:10pt;
+	padding-left:0;
+	text-align:center;
+}
+.promo2{
+    font-weight: bold;
+    color:#2B7A10;
+}
+.buy_block{
+float:left;
+width:100px;
+}
+
+.dsq-options{
+	display:none;
+}
+#dsq-comments-title{
+	display:none;
+}
+.wrapper{
+	width:1000px;
+	margin:auto;
+	margin-top:0px;
+	border:1px   #BCCDBC solid;
+    box-shadow: 0 1px 40px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.content{
+	background:white;
+	overflow:auto;
+        padding: 30px;
+
+}
+.sidebar{
+	float:left;
+	width:280px;
+	margin:0px;
+	padding:0px;
+}
+.sidebar2{
+	float:left;
+	width:80px;
+	margin:0px;
+	padding:0px;
+}
+.content_body{
+	
+	float:left;
+	width:600px;
+	margin:0px;
+	min-height: 600px;
+}
+.content_standalone{
+	width:600px;
+	min-height: 600px;
+
+	padding: 30px;
+   margin-left: auto;
+    margin-right: auto;
+	
+}
+.login{
+	background:#E6FADE;
+	border:0pt solid Navy;
+	padding:10pt;
+	margin:10pt;
+	display: inline-block;
+}
+.login td{
+padding-top:5pt;
+}
+.login_header{
+	padding:2pt;
+	background:Navy;
+	color:white;
+	font-weight:bold;
+}
+.login_internal{
+	padding:10pt;
+}
+.login a{
+text-decoration:none;
+}
+.login img{
+border:0pt;
+}
+.login td{
+font-weight:bold;
+}
+.header{
+
+	padding:0pt;
+	padding-bottom:4pt;
+	position:relative;
+	background:#6180C0;
+	border:1px solid white;
+  color:white;
+}
+
+
+.copyright{
+	font-style:italic;
+	font-size:9pt;
+	padding:10px;
+	margin-top:100px;
+	clear:both;
+}
+.content_body table{
+    	border-collapse:collapse;
+        margin:10px;
+        margin-top: 0pt;
+}
+.content_body  td{
+    padding: 6pt;
+    margin:5px;
+    background:#E8E8FF;
+    border:2px solid white;
+    white-space: nowrap;
+}
+.content_body  th{
+    padding: 6pt;
+    margin:5px;
+    background:#E8E8FF;
+    border:2px solid white;
+}
+
+a[target="_blank"]::after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 3px 0 5px;
+}

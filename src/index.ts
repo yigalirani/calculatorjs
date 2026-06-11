@@ -15,9 +15,7 @@ const page_template=
   <meta http-equiv=Cache-Control CONTENT=no-cache>
   <meta http-equiv=Pragma CONTENT=no-cache>
 
-  <link rel="stylesheet" href="/client/style2.css" type="text/css" media="screen" >
-    <script type="text/javascript" src="/client/script.js"></script>
-
+  <link rel="stylesheet" href="client/style2.css" type="text/css" media="screen" >
   <title>Trip calculator</title>
 
   </head>
