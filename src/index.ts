@@ -4,12 +4,7 @@ import { resolve } from 'upath';
 import fastify_static from '@fastify/static';
 import type { TypeBoxTypeProvider } from '@fastify/type-provider-typebox';
 import cookie from '@fastify/cookie';
-interface Line{
-  amt:number
-  name:string
-  comment:string
-  url:string
-}
+import {calc_trip} from './calc.js'
 const page_template=
 `<!DOCTYPE html>
   <html>
@@ -44,46 +39,7 @@ const page_template=
     </body>
   </html>
 `
-function calc(title:string,lines:Line[]){
-  let total=0
-  const rows=[]
-  for (const {name,amt,comment,url} of lines){
-    total+=amt
-    rows.push(`<tr>
-      <td>${name}</td>
-      <td>${comment}</td>
-      <td><a href="${url}">${url}</a></td>
-      <td>${amt}</td>
-    </tr>`)
-  }
-    rows.push(`<tr>
-      <td>total</td>
-      <td></td>
-      <td></td>
-      <td>${total}</td>
-    </tr>`)  
-    return `
-    <h3>${title}</h3><table>
-    <tr>
-      <th>item</th>
-      <th>comment</th>
-      <th>link</th>
-      <th>amt</td>
-    </tr>
-    ${rows.join('\n')}
-    </table>
-    `
-}
-function calc_trip(){
-  return calc('tel aviv to paris with two days in athens',[
-    {
-      name:"Tel Aviv - Athens",
-      comment:"june 15 3:10 pm – 5:20 pm",
-      url:"https://kay.ac/eY7dea",
-      amt:111
-    }
-  ])
-}
+
 function register_standard_plugins(app:FastifyInstance){
   const root=resolve('client')
   app.register(fastify_static, {
