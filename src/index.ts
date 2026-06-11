@@ -30,12 +30,12 @@ const page_template=
               <div class=content_body>
                 ###       
               </div>
-              <div class=copyright>
+  
+                  <div class=copyright>
                       Copyright &copy;  2003 - ${new Date().getFullYear()} by symbol click. <A href="http://symbolclick.com/about.htm">Contact info</A>
               </div>
           </div>
       </div>
-      
     </body>
   </html>
 `

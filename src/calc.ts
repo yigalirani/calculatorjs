@@ -8,6 +8,13 @@ export function calc_trip(){
       amt:111
     },
     {
+      name:"two nights in athens hostel",
+      comment:"june 15 - june 17",
+      url:"https://kay.ac/jxqhiq",
+      amt:64
+    },
+    
+   {
       name:"Athens - Paris",
       comment:"june 17 12:10 pm – 2:40 pm",
       url:"https://kay.ac/imrhw6",
