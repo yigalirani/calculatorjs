@@ -1,0 +1,8 @@
+node_modules
+dist
+types
+config*.json
+autogen
+kysely_config.json
+compare
+*.pem
